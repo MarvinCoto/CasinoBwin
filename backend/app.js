@@ -16,6 +16,8 @@ app.use(
     })
 );
 
+//Backend is working
+
 //Que acepte datos en json
 app.use(express.json());
 
