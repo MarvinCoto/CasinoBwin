@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors"
 import gamesRoutes from "./src/routes/games.js"
 import clientsRoutes from "./src/routes/clients.js"
+import categoriesRoutes from "./src/routes/categories.js"
 
 //Creo una constante que es igual a la librería que importé
 const app = express();
@@ -28,6 +29,7 @@ app.use(cookieParser());
 
 app.use("/api/games", gamesRoutes)
 app.use("/api/clients", clientsRoutes)
+app.use("/api/categories", categoriesRoutes)
 
 //Exporto la constante para poder usar express en otros archivos
 export default app;

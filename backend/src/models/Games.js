@@ -13,8 +13,10 @@ const gamesSchema = new Schema({
         type: String,
         require: true
     },
-    category: {
-        type: String
+    idCategory: {
+        type: Schema.Types.ObjectId,
+        ref: "categories",
+        require: true
     },
     minimumBet: {
         type: Number,
